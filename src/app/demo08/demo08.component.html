@@ -1,0 +1,9 @@
+<h3>常用属性绑定</h3>
+<img [src]="'../../'+imgUrl" alt="">
+<a [href]=linkUrl>click</a>
+<input type="text" [ngModel]="myValue">
+<input type="text" [(ngModel)]="myResult">
+<h3>{{myResult}}</h3>
+
+
+<input type="text"[(ngModel)]="myName" (ngModelChange)="output($event)">

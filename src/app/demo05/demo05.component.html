@@ -1,0 +1,30 @@
+<h1>demo05</h1>
+<span [ngSwitch]="uname">
+  <p *ngSwitchCase="'lucy'">
+    你好,lucy
+  </p>
+  <p *ngSwitchCase="'michael'">
+    你好,michael
+  </p>
+  <p *ngSwitchDefault>
+    你是谁啊
+  </p>
+</span>
+<table>
+  <thead>
+    <tr>
+      <th>成绩</th>
+      <th>年龄</th>
+      <th>性别</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let item of stuList">
+      <tr *ngIf="item.score>80">
+        <td>{{item.score}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.sex}}</td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
