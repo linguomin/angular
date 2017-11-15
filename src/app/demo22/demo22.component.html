@@ -1,0 +1,26 @@
+<h1>这是一个管道的案例</h1>
+
+<p>{{nowDate}}</p>
+<p>{{nowDate|date}}</p>
+<p>{{nowDate|date:'MM-dd hh:mm'}}</p>
+<p>{{stu.name}}</p>
+<p>{{stu.age}}</p>
+<p>{{stu | json }}</p>
+<p>{{title}}</p>
+<p>{{title|uppercase}}</p>
+<p>{{title|lowercase}}</p>
+<p>{{price|number:'4.3-5'}}</p>
+<p>{{totalPrice | currency:'CNY'}}</p>
+<p>{{totalPrice | currency:'CNY':true}}</p>
+<p>{{totalPrice | currency:'EUR'}}</p>
+<p>{{totalPrice | currency:'EUR':true}}</p>
+<hr>
+<p>{{trendAge}}</p>
+<p>{{trendAge|percent}}</p>
+
+<p>{{info}}</p>
+<p>{{info |slice:5}}</p>
+<p>{{info |slice:1:5}}</p>
+
+
+<p>{{tip|uppercase|slice:3}}</p>
