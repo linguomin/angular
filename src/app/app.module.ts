@@ -57,11 +57,16 @@ import { Demo29Component } from './demo29_service/demo29.component';
 import { Demo30Component } from './demo29_service/demo30.component';
 import { Demo31Component } from './demo31_guard/demo31.component';
 import { MyGuard } from './demo31_guard/myguard.service';
+import { Demo32Component } from './demo32_life/demo32.component';
+import { Demo33Component } from './demo32_life/demo33.component';
+import { Demo34Component } from './demo34_carsouel/demo34.component';
+import { Carousel } from './demo34_carsouel/carousel.component';
+import { Slide } from './demo34_carsouel/slide.component';
 
 @NgModule({
   providers:[LogService,HeartBeatService,MyHttpService,MyGuard],
   imports: [BrowserModule, FormsModule, AppRoutingModule,HttpModule],
-  declarations: [AppComponent, Demo01Component, Demo02Component, Demo03Component, Demo04Component, Demo05Component, Demo06Component, Demo07Component, MyInputComponent, Demo08Component, Demo09Component, Demo10Component, Demo11Component, TestDirective, Demo12Component, Demo13Component, NotFoundComponent, Demo14Component, CheckComponent, PayComponent, SendComponent,DashComponent,LoginComponent,MailComponent,InboxComponent,OutboxComponent,ParentComponent,SonComponent,MainComponent,HeaderComponent,IndexComponent,SlidesComponent,CartComponent,OrderConfirmComponent,Step1Component,Step2Component,OrderHeaderComponent,Demo22Component,Demo23Component,MyCurrencyPipe,SexChangePipe,Demo24Component,Demo25Component,Demo26Component,Demo28Component,ChangeBgDirective,Demo29Component,Demo30Component,Demo31Component],
+  declarations: [AppComponent, Demo01Component, Demo02Component, Demo03Component, Demo04Component, Demo05Component, Demo06Component, Demo07Component, MyInputComponent, Demo08Component, Demo09Component, Demo10Component, Demo11Component, TestDirective, Demo12Component, Demo13Component, NotFoundComponent, Demo14Component, CheckComponent, PayComponent, SendComponent,DashComponent,LoginComponent,MailComponent,InboxComponent,OutboxComponent,ParentComponent,SonComponent,MainComponent,HeaderComponent,IndexComponent,SlidesComponent,CartComponent,OrderConfirmComponent,Step1Component,Step2Component,OrderHeaderComponent,Demo22Component,Demo23Component,MyCurrencyPipe,SexChangePipe,Demo24Component,Demo25Component,Demo26Component,Demo28Component,ChangeBgDirective,Demo29Component,Demo30Component,Demo31Component,Demo32Component,Demo33Component,Demo34Component,Carousel,Slide],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

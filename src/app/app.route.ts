@@ -19,12 +19,16 @@ import { Demo29Component } from './demo29_service/demo29.component';
 import { Demo30Component } from './demo29_service/demo30.component';
 import { Demo31Component } from './demo31_guard/demo31.component';
 import { MyGuard } from './demo31_guard/myguard.service';
+import { Demo32Component } from './demo32_life/demo32.component';
+import { Demo34Component } from './demo34_carsouel/demo34.component';
 
 const routes: Routes = [
 
-  { path: '', redirectTo: '/demo31', pathMatch: 'full' },
-  { path: 'demo31', component: Demo31Component ,canActivate:[MyGuard] },
+  { path: '', redirectTo: '/demo34', pathMatch: 'full' },
+  { path: 'demo34', component: Demo34Component },
+  { path: 'demo32', component: Demo32Component },
   { path: 'demo29', component: Demo29Component },
+  { path: 'demo31', component: Demo31Component ,canActivate:[MyGuard] },
   { path: 'demo30', component: Demo30Component },
   { path: 'demo28', component: Demo28Component },
   { path: 'demo26', component: Demo26Component },
